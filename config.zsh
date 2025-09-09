@@ -102,7 +102,7 @@ done
 source $ZDOTDIR/theme.zsh
 
 # nicer defaults
-alias ls='ls --color=tty --classify'
+alias ls='ls --color=tty -F'
 alias ll='ls -lah'
 alias diff='diff --color'
 alias grep='grep --color=auto --exclude-dir=.git'
