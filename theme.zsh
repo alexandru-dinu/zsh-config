@@ -1,5 +1,5 @@
 ZSH_COLOR_MAIN="cyan"
-ZSH_COLOR_INFO="white"
+ZSH_COLOR_INFO="bright-black"
 ZSH_COLOR_DIRTY="red"
 
 _git_info () {
