@@ -83,7 +83,7 @@ zle -N zle-keymap-select
 # copy selection to clipboard
 function vi-yank-xclip {
     zle vi-yank
-    echo "$CUTBUFFER" | xsel --clipboard
+    echo "$CUTBUFFER" | pbcopy
 }
 zle -N vi-yank-xclip
 bindkey -M vicmd 'y' vi-yank-xclip
@@ -102,7 +102,7 @@ done
 source $ZDOTDIR/theme.zsh
 
 # nicer defaults
-alias ls='ls --color=tty -F'
+alias ls='ls --color=auto -F'
 alias ll='ls -lah'
 alias diff='diff --color'
 alias grep='grep --color=auto --exclude-dir=.git'
